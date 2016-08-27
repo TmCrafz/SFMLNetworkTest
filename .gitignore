@@ -34,5 +34,7 @@
 *.swo
 *.txt~
 *~
+*.d
 .vimrc
+
 
