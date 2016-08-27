@@ -24,6 +24,20 @@ int main()
 	{
 		std::cout << "Successfully accepting connection" << std::endl;
 	}
-	
-
+	char data[11];
+	std::size_t received;
+	if (client.receive(data, sizeof(data), received) != sf::Socket::Done)
+	{
+		std::cerr << "Error by receiving data" << std::endl;
+	}
+	else
+	{
+		std::cout << "Received " << received << " Bytes" << std::endl;
+		std::cout << "Data:" << std::endl;
+		for (char c : data)
+		{
+			std::cout << c;
+		}
+		std::cout << std::endl;
+	}
 }

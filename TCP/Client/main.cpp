@@ -20,6 +20,15 @@ int main()
 	{
 		std::cout << "Success" << std::endl;
 	}
+	char data[11] = { 'H', 'E', 'L', 'L', 'O', ' ', 'W', 'O', 'R', 'L', 'D' };
+	if (socket.send(data, sizeof(data)) != sf::Socket::Done)
+	{
+		std::cerr << "Error by sending data" << std::endl;
+	}
+	else
+	{
+		std::cout << "data send" << std::endl;
+	}
 }
 
 
