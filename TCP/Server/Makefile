@@ -60,7 +60,7 @@
 MY_CFLAGS = -std=c++14
 
 # The linker options.
-MY_LIBS   = -lsfml-graphics -lsfml-window -lsfml-system
+MY_LIBS   = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network
 
 # The pre-processor options used by the cpp (man cpp for more).
 CPPFLAGS  = -Wall
@@ -74,7 +74,7 @@ SRCDIRS   =
 
 # The executable file name.
 # If not specified, current directory name or `a.out' will be used.
-PROGRAM   =
+PROGRAM   = Server.o
 
 ## Implicit Section: change the following only when necessary.
 ##==========================================================================
